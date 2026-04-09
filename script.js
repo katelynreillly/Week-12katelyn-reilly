@@ -29,6 +29,6 @@ toggleBtn.addEventListener("click", () => {
   if (document.body.classList.contains("dark-mode")) {
     img.src = "815bb2e8fec49a59a9218b15be0cbc3506888fda";
   } else {
-    img.src = "./cafe-day.jpg";
+    img.src = "ED56676C-2C99-4915-A068-7C91026AE8EA.jpeg";
   }
 });
