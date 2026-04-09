@@ -29,6 +29,6 @@ toggleBtn.addEventListener("click", () => {
   if (document.body.classList.contains("dark-mode")) {
     img.src = "ED56676C-2C99-4915-A068-7C91026AE8EA.jpeg";
   } else {
-    img.src = "ED56676C-2C99-4915-A068-7C91026AE8EA.jpeg";
+    img.src = "IMG_0630.jpeg";
   }
 });
