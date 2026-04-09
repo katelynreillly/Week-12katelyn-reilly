@@ -27,7 +27,7 @@ toggleBtn.addEventListener("click", () => {
 
   // Switch image based on mode
   if (document.body.classList.contains("dark-mode")) {
-    img.src = "./cafe-night.jpg";
+    img.src = "815bb2e8fec49a59a9218b15be0cbc3506888fda";
   } else {
     img.src = "./cafe-day.jpg";
   }
