@@ -32,3 +32,20 @@ toggleBtn.addEventListener("click", () => {
     img.src = "IMG_0630.jpeg";
   }
 });
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+
+    // close all other answers
+    document.querySelectorAll(".faq-answer").forEach((item) => {
+      if (item !== answer) {
+        item.classList.remove("show");
+      }
+    });
+
+    // toggle clicked one
+    answer.classList.toggle("show");
+  });
+});
