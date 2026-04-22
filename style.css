@@ -1,79 +1,43 @@
-/* Default (Day Mode) */
-body {
-  background-color: white;
-  color: black;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  padding: 30px;
-  transition: background-color 0.5s, color 0.5s;
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-h1 {
-  margin-top: 20px;
-  font-size: 40px;
-}
-
-#menu-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-#menu-list li {
-  background: #ddd;
+/* Navbar */
+.navbar {
+  background-color: #eee;
   padding: 12px;
-  margin: 8px auto;
-  border-radius: 6px;
-  width: 60%;
-  font-size: 18px;
+  text-align: center;
 }
 
-/* Dark mode menu items */
-body.dark-mode #menu-list li {
-  background: #444;
+/* Dark mode navbar */
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
 }
 
-/* Buttons */
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 6px;
-  border: none;
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
-/* Daily Special Text */
-#daily-special {
-  margin-top: 15px;
-  font-style: italic;
-  font-size: 18px;
-}
-.faq-answer {
-  display: none;
-  margin: 5px 0 15px;
-  padding-left: 10px;
-}
-
-.faq-answer.show {
-  display: block;
-}
-
-.faq-question {
-  width: 100%;
-  text-align: left;
-  padding: 10px;
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
   font-size: 16px;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  border: none;
-  margin-top: 10px;
+  transition: color 0.3s;
 }
 
-.faq-question:hover {
-  background-color: #e8e8e8;
+/* Dark mode links */
+body.dark-mode .navbar a {
+  color: #f0f0f0;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  color: #0077cc;
+}
+
+/* Dark mode hover */
+body.dark-mode .navbar a:hover {
+  color: #66aaff;
 }
